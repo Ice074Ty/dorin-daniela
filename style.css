@@ -5,8 +5,7 @@
 }
 
 body {
-    max-width: 430px;
-    min-width: 430px;
+    width: 430px;
     margin: 0 auto;
     padding: 0;
     font-family: "Cormorant Garamond";
@@ -56,29 +55,29 @@ body {
 }
 
 .section3 h2{
-    margin-top: -8vh;
+    margin-top: -41.26px;
     padding: 0 0 0 0;
     font-family: "Poiret One";
-    font-size: 1rem;
+    font-size: 16px;
 
 }
 
 .section3 p{
-    font-size: 2rem; 
+    font-size: 32px; 
     font-family: "Dancing Script";
-    margin-top: -0.8vh;
+    margin-top: -4.12px;
 }
 
 .countdown-section {
     padding: 0 0 0 0;
-    margin-top: -4vh;
+    margin-top: -20.63px;
 }
 
 .countdown-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3vw;
+    gap: 11.78px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -88,7 +87,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3vh 2.5vw;
+    padding: 15.47px 9.82px;
     position: relative;
     background-color: rgba(255, 255, 255, 0.6);
     border: 1.5px solid #b8cfd9;
@@ -108,17 +107,17 @@ body {
 
 .countdown-number {
     font-family: "Cormorant Garamond";
-    font-size: 1.8rem;
+    font-size: 28.8px;
     font-weight: 300;
     color: #4a6b7a;
     line-height: 1;
-    margin-bottom: 1vh;
+    margin-bottom: 5.15px;
     letter-spacing: 2px;
 }
 
 .countdown-label {
     font-family: "Poiret One";
-    font-size: 0.5rem;
+    font-size: 8px;
     color: #6b8e9f;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -130,26 +129,26 @@ body {
 
 .section4 h2{
     font-family: "Poiret One";
-    font-size: 1.3rem;
-    margin: 4vh 0 8vh 0;
+    font-size: 20.8px;
+    margin: 20.63px 0 41.26px 0;
 }
 
 .section4 p:first-of-type {
-    font-size: 0.52rem;
+    font-size: 8.32px;
     font-family: "Cormorant Garamond";
     text-align: justify;
-    margin-left: 6vw;
-    margin-right: 48vw;
-    margin-top: 8vh;
+    margin-left: 23.57px;
+    margin-right: 188.57px;
+    margin-top: 41.26px;
     
 }
 
 .section4 p:last-of-type {
-    font-size: 0.52rem;
+    font-size: 8.32px;
     font-family: "Cormorant Garamond";
     text-align: justify;
-    margin-left: 6vw;
-    margin-right: 48vw;
+    margin-left: 23.57px;
+    margin-right: 188.57px;
 }
 
 .section4 img {
@@ -158,8 +157,8 @@ body {
 
 .section4 img:first-of-type{
     position: absolute;
-    max-width: 39vw;
-    margin-left: 5vw;
+    width: 150px;
+    margin-left: 15px;
     border-radius: 34px;
     margin-top: -196px;
 
@@ -167,32 +166,32 @@ body {
 
 .section4 img:last-of-type{
     position: absolute;
-    max-width: 16vw;
-    margin-left: 15vw;
+    width: 62px;
+    margin-left: 59px;
     border-radius: 108px;
-    margin-top: -3rem;
+    margin-top: -48px;
 
 }
 
 
 .section5 {
-    margin: 0 0 2vh 0;
-    padding: 8vh 0 4vh 0;
+    margin: 0 0 10.31px 0;
+    padding: 41.26px 0 20.63px 0;
     background: #e9edf2 !important;
 }
 
 .section5 h2{
     font-family: "Poiret One";
-    margin: -6vh 0 6vh 0;
-    font-size: 1.3rem;
+    margin: -30.94px 0 30.94px 0;
+    font-size: 20.8px;
   
 }
 
 .section5 > div {
     display: inline-block;
     width: 40%;
-    padding: 4vh 1vw;
-    margin: 0 3vw;
+    padding: 20.63px 3.92px;
+    margin: 0 11.78px;
     vertical-align: top;
     position: relative;
 }
@@ -200,7 +199,7 @@ body {
 .section5 > div:first-of-type::after {
     content: '';
     position: absolute;
-    right: -4vw;
+    right: -15.71px;
     top: 10%;
     height: 80%;
     width: 1px;
@@ -213,32 +212,32 @@ body {
 }
 
 .section5 > div i {
-    font-size: 1.3rem;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    font-size: 20.8px;
+    margin-top: 10.31px;
+    margin-bottom: 10.31px;
     display: block;
 }
 
 .section5 > div > p:first-of-type {
     font-family: "Dancing Script";
-    font-size: 1rem;
-    margin: 2vh 0 0 0;
+    font-size: 16px;
+    margin: 10.31px 0 0 0;
     font-weight: 500;
 }
 
 .section5 > div > p:nth-of-type(2) {
     font-family: "Cormorant Garamond";
-    font-size: 1.1rem;
+    font-size: 17.6px;
  
-    margin: 1vh 0 0 0;
+    margin: 5.15px 0 0 0;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 .section5 > div > p:nth-of-type(3) {
     font-family: "Cormorant Garamond";
-    font-size: 0.6rem;
-    margin: 1vh 0 3vh 0;
+    font-size: 9.6px;
+    margin: 5.15px 0 15.47px 0;
     line-height: 1.6;
 }
 
@@ -246,10 +245,10 @@ body {
     background-color: transparent;
     border: 1px solid #6b8e9f;
     color: #2c3e50;
-    padding: 1vh 2vw;
-    margin: 0 0.2vw;
+    padding: 5.15px 10px;
+    margin: 0 0.78px;
     font-family: "Cormorant Garamond";
-    font-size: 0.5rem;
+    font-size: 8px;
     border-radius: 0;
     transition: all 0.4s ease;
     cursor: pointer;
@@ -264,8 +263,8 @@ body {
 }
 
 .section5 > div button i {
-    font-size: 0.4rem;
-    margin-right: 0.4vw;
+    font-size: 6.4px;
+    margin-right: 1.6px;
     display: inline;
 }
 
@@ -287,7 +286,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(135deg, #f0f4f8 0%, #e8f2f0 100%);
-    padding: 2vh 2.6vw;
+    padding: 10.31px 10.21px;
     border: 1.5px solid #6b8e9f;
     border-radius: 10px;
     box-shadow: 0 10px 35px rgba(107, 142, 159, 0.3);
@@ -300,7 +299,7 @@ body {
     position: absolute;
     top: 8px;
     right: 12px;
-    font-size: 1.04rem;
+    font-size: 16.64px;
     cursor: pointer;
     color: #6b8e9f;
     transition: all 0.3s ease;
@@ -314,16 +313,16 @@ body {
 
 .popup-content h3 {
     font-family: "Dancing Script";
-    font-size: 1.17rem;
-    margin-bottom: 1.3vh;
+    font-size: 18.72px;
+    margin-bottom: 5.1px;
     color: #2c3e50;
     font-weight: 500;
 }
 
 .moderator-name {
     font-family: "Poiret One";
-    font-size: 0.72rem;
-    margin: 1vh 0;
+    font-size: 11.52px;
+    margin: 5.15px 0;
     color: #4a6b7a;
     font-weight: 500;
     letter-spacing: 0.65px;
@@ -331,15 +330,15 @@ body {
 
 .moderator-phone {
     font-family: "Red Hat Display";
-    font-size: 0.65rem;
+    font-size: 10.4px;
     color: #6b8e9f;
-    margin-top: 1vh;
+    margin-top: 5.15px;
     font-weight: 400;
 }
 
 .moderator-phone i {
     margin-right: 5px;
-    font-size: 0.62rem;
+    font-size: 9.92px;
     display: inline;
 }
 
@@ -373,7 +372,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(135deg, #f0f4f8 0%, #e8f2f0 100%);
-    padding: 2vh 2.6vw;
+    padding: 10.31px 10.21px;
     border: 1.5px solid #6b8e9f;
     border-radius: 10px;
     box-shadow: 0 10px 35px rgba(107, 142, 159, 0.3);
@@ -383,8 +382,8 @@ body {
 }
 
 .message-popup-icon {
-    font-size: 1.63rem;
-    margin-bottom: 1vh;
+    font-size: 26.08px;
+    margin-bottom: 5.15px;
 }
 
 .message-popup-icon.success {
@@ -397,9 +396,9 @@ body {
 
 .message-popup-text {
     font-family: "Cormorant Garamond";
-    font-size: 0.65rem;
+    font-size: 10.4px;
     color: #2c3e50;
-    margin: 4vh 6vw 1vh 6vw;
+    margin: 20.63px 30.94px 5.15px 30.94px;
     line-height: 1.5;
 }
 
@@ -407,9 +406,9 @@ body {
     background-color: transparent;
     border: 1.5px solid #6b8e9f;
     color: #2c3e50;
-    padding: 0.65vh 1.6vw;
+    padding: 3.35px 6.28px;
     font-family: "Poiret One";
-    font-size: 0.49rem;
+    font-size: 7.84px;
     border-radius: 5px;
     cursor: pointer;
     letter-spacing: 0.65px;
@@ -457,31 +456,31 @@ body {
 
 .section6 h3{
     font-family: "Dancing Script";
-    font-size: 1.3rem;
-    margin: 0 10vh 1vh 10vh;
+    font-size: 20.8px;
+    margin: 0 51.5px 5.15px 51.5px;
     font-weight: 100;
 }
 
 .section6 p{
     font-family: "Poiret One";
-    font-size: 0.67rem;
-    margin: 1vh 0vh 0 0;
+    font-size: 10.72px;
+    margin: 5.15px 0 0 0;
     font-weight: 100;
     
 }
 
 .section7 h2 {
-    margin-top: -6vh;
+    margin-top: -30px;
     font-family: "Poiret One";
-    font-size: 1.3rem ;    
+    font-size: 20.8px ;    
     letter-spacing: 2px;
-    margin-bottom: 1.2vh;
+    margin-bottom: 6.18px;
     color: #2c2c2c;
     text-align: center;
 }
 
 .section7 p{
-    font-size: 0.5rem;
+    font-size: 8px;
     margin-bottom: 30px;
     color: #555;
     text-align: center;
@@ -547,25 +546,25 @@ section {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 40px;
     margin-bottom: 10px;
     color: #333;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 32px;
     margin-bottom: 15px;
     color: #444;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-bottom: 10px;
     color: #555;
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 17.6px;
     line-height: 1.6;
     color: #666;
     margin-bottom: 10px;
@@ -581,7 +580,7 @@ button {
     color: white;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 button:hover {
@@ -596,13 +595,13 @@ a {
 form {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    gap: 5.15px;
     width: 85%;
     margin: 0 auto;
     text-align: left;
     border: 1px solid #2c2c2c;
-    border-radius: 0.8em;
-    padding: 3vh 5vw;
+    border-radius: 12.8px;
+    padding: 15.47px 19.64px;
     background-color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -612,9 +611,9 @@ input[type="number"] {
     width: 100%;
     padding: 6px 0 4px 0;
     border: none;
-    border-bottom: 0.1em solid #2c2c2c;
+    border-bottom: 1px solid #2c2c2c;
     background-color: transparent;
-    font-size: 0.52rem;
+    font-size: 8.32px;
     outline: none;
     transition: border-color 0.3s ease;
 }
@@ -632,19 +631,19 @@ input[type="number"]::placeholder {
 
 form > div:first-of-type {
     display: flex;
-    margin: 0vh 0;
+    margin: 0 0;
 }
 
 form > div:first-of-type button {
     flex: 1;
-    padding: 0.8vh 2vw;
-    margin-bottom: 3vh;
+    padding: 4.12px 7.85px;
+    margin-bottom: 15.47px;
     border: 1px solid #2c2c2c;
     background-color: white;
     color: #2c2c2c;
     cursor: pointer;
     border-radius: 0;
-    font-size: 0.5rem;
+    font-size: 8px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
@@ -660,14 +659,14 @@ form > div:first-of-type button.active {
 }
 
 .checkbox-group {
-    margin: 1.8vh 0;
+    margin: 9.28px 0;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 .checkbox-group > label {
-    font-size: 0.7rem;
+    font-size: 11.2px;
     font-family: "Poiret One";
     font-weight: 600;
     display: block;
@@ -688,7 +687,7 @@ input[type="checkbox"] {
 }
 
 .checkbox-item label {
-    font-size: 0.55rem;
+    font-size: 8.8px;
     font-family: "Cormorant Garamond";
     margin: 0;
     cursor: pointer;
@@ -697,17 +696,17 @@ input[type="checkbox"] {
 
 input[type="submit"] {
     width: 100%;
-    padding: 1vh 2vw;
+    padding: 5.15px 7.85px;
     background-color: #2c2c2c;
     color: white;
     border: none;
     border-radius: 0;
     cursor: pointer;
-    font-size: 0.5rem;
+    font-size: 8px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin: 1.6vh 0 1vh 0;
+    margin: 8.25px 0 5.15px 0;
     transition: background-color 0.3s ease;
 }
 
