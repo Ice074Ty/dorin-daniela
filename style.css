@@ -15,42 +15,42 @@ body {
 }
 
 .fa-heart{
-    font-size: 0.6rem;
+    font-size: 10px;
 }
 
 
 .section2 div{
-    margin-left: 45vw;
-    margin-top: -5vh;
+    margin-left: 180px;
+    margin-top: -25px;
 }
 
 .section2 h2 {
-    font-size: 5.3rem;
-    margin-bottom: 0.5vh;
+    font-size: 84.4px;
+    margin-bottom: 10px;
     font-family: 'Tangerine';
-    margin-left: -23vw;
-    margin-top: 11vh;
+    margin-left: -90px;
+    margin-top: 57px;
 }
 
 .section2 span:first-child {
     position: absolute;
     font-family: "Tangerine";
-    font-size: 8.5rem;
-    margin-left: -29vw;
-    margin-top: -2vh;
+    font-size: 136px;
+    margin-left: -110px;
+    margin-top: -10.31px;
 }
 
 .section2 span:last-child {
     position: absolute;
     font-family: "Poiret One";
-    font-size: 2rem;
-    margin-left: -14vw;
+    font-size: 32px;
+    margin-left: -55px;
 }
 
 .section2 p{
-    padding-top: 11vh;
-    font-size: 0.7rem;
-    margin: 2vh 8vw 3vh 8vw;
+    padding-top: 56px;
+    font-size: 11.2px;
+    margin: 10.3px 31.4px 15.5px 31.4px;
 
 }
 
@@ -160,7 +160,7 @@ body {
     max-width: 39vw;
     margin-left: 5vw;
     border-radius: 34px;
-    margin-top: -5vh;
+    margin-top: -196px;
 
 }
 
@@ -169,7 +169,7 @@ body {
     max-width: 16vw;
     margin-left: 15vw;
     border-radius: 108px;
-    margin-top: -9.5vh;
+    margin-top: -3rem;
 
 }
 
@@ -489,7 +489,7 @@ body {
 }
 
 section:first-child {
-    min-height: 100vh;
+    min-height: 515px;
     background-image: url('IMG_2435.JPG');
     background-size: cover;
     background-position: center;
@@ -525,18 +525,18 @@ section:first-child p {
 }
 
 section:first-child h1 {
-    margin-top: 60vh;
-    font-size: 1.3rem;
-    margin-bottom: 1.8vh;
+    margin-top: 309.47px;
+    font-size: 20.8px;
+    margin-bottom: 10px;
 }
 
 section:first-child h2 {
-    font-size: 3.4rem;
-    margin-bottom: 0vh;
+    font-size: 54.4px;
+    margin-bottom: 0;
 }
 
 section:first-child p {
-    font-size: 2rem;
+    font-size: 32px;
 }
 
 section {
@@ -733,7 +733,7 @@ section:first-child {
 section:first-child::after {
     content: '';
     position: absolute;
-    bottom: -7vh;
+    bottom: -36.1px;
     left: 0;
     width: 100%;
     height: 150px;
