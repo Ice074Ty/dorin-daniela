@@ -53,7 +53,6 @@ const countdownInterval = setInterval(updateCountdown, 1000);
     });
 });
 
-// Countdown functionality
 function updateCountdown() {
     const weddingDate = new Date('May 22, 2026 13:00:00').getTime();
     const now = new Date().getTime();
@@ -73,17 +72,50 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-// Moderator popup functions
+function showMessagePopup(message, isSuccess = true) {
+    const popup = document.getElementById('messagePopup');
+    const icon = document.getElementById('messageIcon');
+    const text = document.getElementById('messageText');
+    
+    if (isSuccess) {
+        icon.innerHTML = '<i class="fa-solid fa-check-circle"></i>';
+        icon.className = 'message-popup-icon success';
+    } else {
+        icon.innerHTML = '<i class="fa-solid fa-exclamation-circle"></i>';
+        icon.className = 'message-popup-icon error';
+    }
+    
+    text.textContent = message;
+    popup.style.display = 'block';
+    popup.classList.add('show');
+}
+
+function closeMessagePopup() {
+    const popup = document.getElementById('messagePopup');
+    popup.classList.remove('show');
+    setTimeout(() => {
+        popup.style.display = 'none';
+    }, 300);
+}
+
 function showModeratorPopup(event) {
     event.preventDefault();
-    document.getElementById('moderatorPopup').style.display = 'block';
+    const popup = document.getElementById('moderatorPopup');
+    popup.style.display = 'block';
+    popup.classList.add('show');
 }
 
 function closeModeratorPopup() {
-    document.getElementById('moderatorPopup').style.display = 'none';
+    const popup = document.getElementById('moderatorPopup');
+    popup.classList.remove('show');
+    setTimeout(() => {
+        popup.style.display = 'none';
+    }, 300);
 }
 
-// Scroll animations
+
+
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px'
@@ -97,7 +129,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all sections
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.section2, .section3, .countdown-section, .section4, .section5, .section6, .section7');
     const countdownItems = document.querySelectorAll('.countdown-item');
@@ -108,7 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
     forms.forEach(form => observer.observe(form));
 });
 
-// URL-ul Web App din Google Apps Script
 const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwfEMGr6sZGYQNh3mAaJUkJy-BLvCn9US5HX8lfYWkCVHeRXFb--x2GxKbFAyEVxo8NSQ/exec'; // Înlocuiește cu URL-ul pe care l-ai copiat
 
 document.querySelector('form').addEventListener('submit', async function(e) {
@@ -118,15 +148,13 @@ document.querySelector('form').addEventListener('submit', async function(e) {
     const refuzBtn = document.querySelector('form > div:first-of-type button:last-child');
     const submitBtn = document.querySelector('input[type="submit"]');
     
-    // Verifică dacă a fost selectat Accept sau Refuz
     if (!acceptBtn.classList.contains('active') && !refuzBtn.classList.contains('active')) {
-        alert('Vă rugăm să selectați ACCEPT sau REFUZ');
+        showMessagePopup('Vă rugăm să selectați ACCEPT sau REFUZ');
         return;
     }
     
     const status = acceptBtn.classList.contains('active') ? 'ACCEPT' : 'REFUZ';
     
-    // Colectează datele
     const formData = {
         nume: document.getElementById('nume').value.trim(),
         prenume: document.getElementById('prenume').value.trim(),
@@ -138,18 +166,16 @@ document.querySelector('form').addEventListener('submit', async function(e) {
         nealc: status === 'ACCEPT' ? document.getElementById('nealc').checked : false
     };
     
-    // Validare
     if (!formData.nume || !formData.prenume) {
-        alert('Vă rugăm să completați numele și prenumele');
+        showMessagePopup('Vă rugăm să completați numele și prenumele');
         return;
     }
     
     if (status === 'ACCEPT' && !formData.nrper) {
-        alert('Vă rugăm să specificați numărul de persoane');
+        showMessagePopup('Vă rugăm să specificați numărul de persoane');
         return;
     }
     
-    // Dezactivează butonul de submit
     submitBtn.disabled = true;
     submitBtn.value = 'Se trimite...';
     
@@ -163,9 +189,16 @@ document.querySelector('form').addEventListener('submit', async function(e) {
             body: JSON.stringify(formData)
         });
         
-        alert('Mulțumim! Răspunsul dvs. a fost înregistrat cu succes! ✓');
+        showMessagePopup('Mulțumim! Răspunsul dvs. a fost înregistrat cu succes!');
         
-        // Resetează formularul
+        setTimeout(() => {
+            document.querySelector('form').reset();
+            acceptBtn.classList.remove('active');
+            refuzBtn.classList.remove('active');
+            document.getElementById('nrper').style.display = 'none';
+            document.querySelector('.checkbox-group').style.display = 'none';
+        }, 2000);
+
         document.querySelector('form').reset();
         acceptBtn.classList.remove('active');
         refuzBtn.classList.remove('active');
@@ -174,7 +207,7 @@ document.querySelector('form').addEventListener('submit', async function(e) {
         
     } catch (error) {
         console.error('Error:', error);
-        alert('A apărut o eroare. Vă rugăm să încercați din nou.');
+        showMessagePopup('A apărut o eroare. Vă rugăm să încercați din nou.');
     } finally {
         submitBtn.disabled = false;
         submitBtn.value = 'CONFIRMĂ';
