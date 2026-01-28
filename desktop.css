@@ -42,14 +42,13 @@
         height: 80px;
     }
 }
-
+/* 
 @media (min-width: 1440px) and (max-width: 2560px) {
     .tot {
         max-width: 100%;
         min-width: 100%;
     }
 
-    /* SECTION 1 - Hero */
     section:first-child {
         height: 1200px;
     }
@@ -73,7 +72,6 @@
         font-size: 100px;
     }
 
-    /* SECTION 2 */
     .section2 div {
         margin-left: 450px;
         margin-top: 120px;
@@ -102,7 +100,6 @@
         margin: 200px 450px 60px 450px;
     }
 
-    /* SECTION 3 */
     .section3 h2 {
         margin-top: 30px;
         font-size: 65px;
@@ -113,7 +110,6 @@
         margin-top: 25px;
     }
 
-    /* COUNTDOWN */
     .countdown-section {
         margin-top: 30px;
     }
@@ -136,7 +132,6 @@
         font-size: 32px;
     }
 
-    /* SECTION 4 */
     .section4 {
         padding: 60px 120px;
         position: relative;
@@ -157,7 +152,6 @@
         margin-top: 50px !important;
     }
 
-    /* IMAGINI FIXATE */
     .section4 img:first-of-type {
         position: absolute;
         width: 600px;
@@ -179,7 +173,6 @@
         display: block !important;
     }
 
-    /* SECTION 5 - PROGRAMUL DE NUNTĂ */
     .section5 {
         padding: 60px 120px;
     }
@@ -197,7 +190,6 @@
         padding: 40px 20px;
     }
 
-    /* Elimină linia verticală */
     .section5 > div:first-of-type::after {
         display: none;
     }
@@ -231,7 +223,6 @@
         margin-right: 8px;
     }
 
-    /* SECTION 6 */
     .section6 {
         padding: 80px 120px;
     }
@@ -246,7 +237,6 @@
         margin: 40px 0 0 0;
     }
 
-    /* SECTION 7 */
     .section7 {
         padding: 80px 120px;
     }
@@ -262,7 +252,6 @@
         margin-bottom: 60px;
     }
 
-    /* FORM */
     form {
         width: 70%;
         max-width: 900px;
@@ -317,7 +306,6 @@
         margin: 28px 0 18px 0;
     }
 
-    /* POPUP MODERATOR */
     .popup-content {
         padding: 55px 70px;
         border: 3px solid #6b8e9f;
@@ -352,7 +340,6 @@
         font-size: 32px;
     }
 
-    /* MESSAGE POPUP */
     .message-popup-content {
         padding: 55px 70px;
         border: 3px solid #6b8e9f;
@@ -397,7 +384,6 @@
         margin-top: 50px !important;
     }
 
-    /* IMAGINI FIXATE */
     .section4 img:first-of-type {
         position: absolute;
         width: 600px;
@@ -632,9 +618,16 @@
         left: 390px
     }
 
+} */
+
+@media (min-width: 1439px) and (max-width: 2560px) {
+    .section4 img:last-of-type {
+        display: none;
+    }
+
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 2560px) {
     .tot {
         max-width: 100%;
         min-width: 100%;
