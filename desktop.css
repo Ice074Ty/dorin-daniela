@@ -1206,7 +1206,7 @@
        
     }
 }
-
+/* 
 @media (min-width: 768px) and (max-width: 1023px) {
     .tot {
         max-width: 100%;
@@ -1236,7 +1236,6 @@
         font-size: 56px;
     }
 
-    /* SECTION 2 */
     .section2 div {
         margin-left: 260px;
         margin-top: 70px;
@@ -1265,7 +1264,6 @@
         margin: 112px 180px 34px 180px;
     }
 
-    /* SECTION 3 */
     .section3 h2 {
         margin-top: 15px;
         font-size: 37px;
@@ -1276,7 +1274,6 @@
         margin-top: 15px;
     }
 
-    /* COUNTDOWN */
     .countdown-section {
         margin-top: 15px;
     }
@@ -1299,7 +1296,6 @@
         font-size: 18px;
     }
 
-    /* SECTION 4 */
     .section4 {
         padding: 34px 67px;
         position: relative;
@@ -1346,7 +1342,6 @@
         display: block !important;
     }
 
-    /* SECTION 5 - PROGRAMUL DE NUNTĂ */
     .section5 {
         padding: 34px 67px;
     }
@@ -1402,7 +1397,6 @@
         top: 2px;
     }
 
-    /* SECTION 6 */
     .section6 {
         padding: 45px 67px;
     }
@@ -1417,7 +1411,6 @@
         margin: 22px 0 0 0;
     }
 
-    /* SECTION 7 */
     .section7 {
         padding: 45px 67px;
     }
@@ -1433,7 +1426,6 @@
         margin-bottom: 34px;
     }
 
-    /* FORM */
     form {
         width: 75%;
         max-width: 525px;
@@ -1488,7 +1480,6 @@
         margin: 16px 0 10px 0;
     }
 
-    /* POPUP MODERATOR */
     .popup-content {
         padding: 31px 39px;
         border: 2px solid #6b8e9f;
@@ -1523,7 +1514,6 @@
         font-size: 18px;
     }
 
-    /* MESSAGE POPUP */
     .message-popup-content {
         padding: 31px 39px;
         border: 2px solid #6b8e9f;
@@ -1772,11 +1762,11 @@
         left: 135px;
         top: 635px;
     }
-}
+} */
 
 
 
-@media (max-width: 771px) {
+@media (max-width: 1023px) {
     .tot {
         max-width: 100%;
         min-width: 100%;
@@ -1837,7 +1827,6 @@
         margin: 87px 140px 26px 140px;
     }
 
-    /* SECTION 3 */
     .section3 h2 {
         margin-top: 12px;
         font-size: 29px;
@@ -1848,7 +1837,6 @@
         margin-top: 12px;
     }
 
-    /* COUNTDOWN */
     .countdown-section {
         margin-top: 12px;
     }
@@ -1871,7 +1859,6 @@
         font-size: 14px;
     }
 
-    /* SECTION 4 */
     .section4 {
         padding: 26px 12px;
         position: relative;
@@ -1892,7 +1879,6 @@
         margin-top: 23px !important;
     }
 
-    /* IMAGINI FIXATE */
     .section4 img:first-of-type {
         position: absolute;
         width: 260px;
@@ -1919,7 +1905,6 @@
         display: block !important;
     }
 
-    /* SECTION 5 - PROGRAMUL DE NUNTĂ */
     .section5 {
         padding: 26px 10px;
     }
@@ -1937,7 +1922,6 @@
         padding: 17px 8px;
     }
 
-    /* Linia verticală între primele 2 coloane */
     .section5 > div:first-of-type::after {
         content: '';
         position: absolute;
@@ -1953,7 +1937,6 @@
             transparent 100%);
     }
 
-    /* Coloana a 3-a pe rând nou */
     .section5 > div:nth-child(3) {
         width: 45%;
         margin: 20px 2% 0 2%;
@@ -1994,7 +1977,6 @@
         margin-right: 4px;
     }
 
-    /* SECTION 6 */
     .section6 {
         padding: 35px 52px;
     }
@@ -2009,7 +1991,6 @@
         margin: 17px 30px 0 30px;
     }
 
-    /* SECTION 7 */
     .section7 {
         padding: 5px 52px 35px 52px;
     }
@@ -2025,7 +2006,6 @@
         margin-bottom: 26px;
     }
 
-    /* FORM */
     form {
         width: 95%;
         padding: 20px 32px;
@@ -2079,7 +2059,6 @@
         margin: 12px 0 8px 0;
     }
 
-    /* POPUP MODERATOR */
     .popup-content {
         padding: 24px 30px;
         border: 2px solid #6b8e9f;
@@ -2114,7 +2093,6 @@
         font-size: 14px;
     }
 
-    /* MESSAGE POPUP */
     .message-popup-content {
         padding: 24px 30px;
         border: 2px solid #6b8e9f;
@@ -2139,6 +2117,12 @@
         border: 2px solid #6b8e9f;
         border-radius: 6px;
     }
+}
+
+@media (max-width: 1023px) and (min-width:823px){
+ .section4 img:last-of-type {
+    display: none;
+ }
 }
 
 
