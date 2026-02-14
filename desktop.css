@@ -978,6 +978,14 @@
     }
 }
 
+@media (max-width: 1523px){
+    .section5 > div:first-child button, .section5 > div:nth-child(2) button, .section5 > div:nth-child(3) button{
+        position: relative;
+        top: 28px;
+    }
+
+}
+
 /* Ajustări fine pentru acest range */
 @media (max-width: 1400px) {
     .section4 p.mobile-show-1400 {
@@ -999,7 +1007,7 @@
 
     .section5 > div:last-child button {
         position: relative;
-        top: -8px; 
+        top: -7px; 
     }
 }
 
@@ -1058,8 +1066,10 @@
 
     .section5 > div:last-child button {
         position: relative;
-        top: -7px; 
+        top: -8px; 
     }
+
+
 }
 
 @media (max-width: 1200px) {
@@ -1131,6 +1141,13 @@
 }
 }
 
+@media (max-width: 1128px) {
+.section5 > div:first-child button, .section5 > div:nth-child(2) button, .section5 > div:nth-child(3) button{
+    position: relative;
+    top: 55px;
+}
+}
+
 @media (max-width: 1120px) {
     .section4 img:last-of-type {
         top: 920px;
@@ -1160,7 +1177,7 @@
 
     .section5 > div:first-child button, .section5 > div:nth-child(2) button, .section5 > div:nth-child(3) button{
     position: relative;
-    top: -12px;
+    top: 12px;
 }
 
 }
@@ -1169,7 +1186,7 @@
 
     .section5 > div:first-child button, .section5 > div:nth-child(2) button, .section5 > div:nth-child(3) button{
     position: relative;
-    top: 23px;
+    top: 50px;
 }
 
 }
@@ -1198,7 +1215,7 @@
     }
     .section5 > div:last-child button{
     position: relative;
-    top: -4px;
+    top: -6px;
     }
 
     .section4 p.mobile-show-1400 {
