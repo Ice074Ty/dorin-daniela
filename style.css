@@ -142,7 +142,6 @@ body{
     text-align: justify;
     margin-left: 210px;
     margin-right: 23.57px;
-    /* margin-right: 210px; */
     margin-top: 41.26px;
     
 }
@@ -240,7 +239,7 @@ body{
 
 .section5 > div > p:nth-of-type(3) {
     font-family: "Cormorant Garamond";
-    font-size: 13px;
+    font-size: 16px;
     margin: 5.15px 3px 15.47px 3px;
     line-height: 1.6;
 }
@@ -249,10 +248,10 @@ body{
     background-color: transparent;
     border: 1px solid #6b8e9f;
     color: #2c3e50;
-    padding: 5.15px 10px;
+    padding: 3px 7px;
     margin: 0 0.78px;
     font-family: "Cormorant Garamond";
-    font-size: 8px;
+    font-size: 13px;
     border-radius: 0;
     transition: all 0.4s ease;
     cursor: pointer;
@@ -267,8 +266,8 @@ body{
 }
 
 .section5 > div button i {
-    font-size: 6.4px;
-    margin-right: 1.6px;
+    font-size: 8px;
+    margin-right: 3px;
     display: inline;
 }
 
@@ -484,7 +483,7 @@ body{
 }
 
 .section7 p{
-    font-size: 14px;
+    font-size: 17px;
     margin-bottom: 30px;
     color: #555;
     text-align: center;
@@ -617,7 +616,7 @@ input[type="number"] {
     border: none;
     border-bottom: 1px solid #2c2c2c;
     background-color: transparent;
-    font-size: 12px;
+    font-size: 16px;
     outline: none;
     transition: border-color 0.3s ease;
 }
@@ -647,7 +646,7 @@ form > div:first-of-type button {
     color: #2c2c2c;
     cursor: pointer;
     border-radius: 0;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
@@ -691,7 +690,7 @@ input[type="checkbox"] {
 }
 
 .checkbox-item label {
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Cormorant Garamond";
     margin: 0;
     cursor: pointer;
@@ -706,7 +705,7 @@ input[type="submit"] {
     border: none;
     border-radius: 0;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
