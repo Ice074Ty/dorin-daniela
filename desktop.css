@@ -627,7 +627,7 @@
 
 }
 
-@media (min-width: 1424px) and (max-width: 2560px) {
+@media (min-width: 1024px) and (max-width: 2560px) {
     .tot {
         max-width: 100%;
         min-width: 100%;
@@ -963,7 +963,7 @@
     }
 }
 
-/* @media (max-width: 1420px) {
+@media (max-width: 1420px) {
 
     .section4 img:first-of-type {
         width: 420px;
@@ -976,8 +976,9 @@
         left: 250px;
         top: 970px;
     }
-} */
+}
 
+/* Ajustări fine pentru acest range */
 @media (max-width: 1400px) {
     .section4 p.mobile-show-1400 {
         font-size: 28px !important;
@@ -1765,7 +1766,7 @@
 
 
 
-@media (max-width: 1423px) {
+@media (max-width: 1023px) {
     .tot {
         max-width: 100%;
         min-width: 100%;
@@ -2116,6 +2117,12 @@
         border: 2px solid #6b8e9f;
         border-radius: 6px;
     }
+}
+
+@media (max-width: 1023px) and (min-width:823px){
+ .section4 img:last-of-type {
+    display: none;
+ }
 }
 
 
@@ -2613,6 +2620,8 @@
 
     }
 
+
+
      .section4 h2{
         font-size: 30px;
 
@@ -2627,6 +2636,6 @@
     }
 
      .section7 p{
-        font-size: 17px;
+        font-size: 14px;
     }
 }
