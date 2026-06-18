@@ -139,8 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
     forms.forEach(form => observer.observe(form));
 });
 
-const SCRIPT_URL = 'https://wedding-dashboard.up.railway.app/api/raspunsuri';
-const USER_ID = '26de3acd-b1b3-4073-8996-056345b6aaf4';
+const SCRIPT_URL = 'https://wedding-dashboard.up.railway.app/api/raspunsuri/public/ID_EVENIMENT';
+const ID_EVENIMENT = '0f509c48-a561-4089-bf06-8de308c95dbc';
 
 document.querySelector('form').addEventListener('submit', async function(e) {
     e.preventDefault();
