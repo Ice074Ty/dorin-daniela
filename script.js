@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const SCRIPT_URL = 'https://wedding-dashboard.up.railway.app/api/raspunsuri';
-const USER_ID = 'd5d7ca1a-f4ad-4626-ba02-a77cde2f8a60';
+const USER_ID = '26de3acd-b1b3-4073-8996-056345b6aaf4';
 
 document.querySelector('form').addEventListener('submit', async function(e) {
     e.preventDefault();
