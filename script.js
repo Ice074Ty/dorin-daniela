@@ -139,7 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
     forms.forEach(form => observer.observe(form));
 });
 
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwfEMGr6sZGYQNh3mAaJUkJy-BLvCn9US5HX8lfYWkCVHeRXFb--x2GxKbFAyEVxo8NSQ/exec'; // Înlocuiește cu URL-ul pe care l-ai copiat
+const SCRIPT_URL = 'https://wedding-dashboard.up.railway.app/api/raspunsuri';
+const USER_ID = 'd5d7ca1a-f4ad-4626-ba02-a77cde2f8a60';
 
 document.querySelector('form').addEventListener('submit', async function(e) {
     e.preventDefault();
@@ -180,14 +181,30 @@ document.querySelector('form').addEventListener('submit', async function(e) {
     submitBtn.value = 'Se trimite...';
     
     try {
-        const response = await fetch(SCRIPT_URL, {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData)
-        });
+    const bauturi = [];
+    if (status === 'ACCEPT') {
+        if (formData.coniac) bauturi.push('Coniac');
+        if (formData.sampanie) bauturi.push('Șampanie');
+        if (formData.vin) bauturi.push('Vin');
+        if (formData.nealc) bauturi.push('Băuturi nealcoolice');
+    }
+
+    const response = await fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            user_id: USER_ID,
+            nume: formData.nume,
+            prenume: formData.prenume,
+            status: status === 'ACCEPT' ? 'Confirmat' : 'Refuzat',
+            persoane: parseInt(formData.nrper) || 0,
+            bauturi: bauturi,
+        })
+    });
+
+    if (!response.ok) throw new Error('Eroare server');
         
         showMessagePopup('Mulțumim! Răspunsul dvs. a fost înregistrat cu succes!');
         
