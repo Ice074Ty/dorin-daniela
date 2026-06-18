@@ -195,7 +195,7 @@ document.querySelector('form').addEventListener('submit', async function(e) {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            user_id: USER_ID,
+            eveniment_id: ID_EVENIMENT,
             nume: formData.nume,
             prenume: formData.prenume,
             status: status === 'ACCEPT' ? 'Confirmat' : 'Refuzat',
