@@ -138,9 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     countdownItems.forEach(item => observer.observe(item));
     forms.forEach(form => observer.observe(form));
 });
-
-const SCRIPT_URL = 'https://wedding-dashboard.up.railway.app/api/raspunsuri/public/ID_EVENIMENT';
-const ID_EVENIMENT = '0f509c48-a561-4089-bf06-8de308c95dbc';
+const SCRIPT_URL = 'https://wedding-dashboard.up.railway.app/api/raspunsuri/public/0f509c48-a561-4089-bf06-8de308c95dbc';
 
 document.querySelector('form').addEventListener('submit', async function(e) {
     e.preventDefault();
@@ -195,7 +193,6 @@ document.querySelector('form').addEventListener('submit', async function(e) {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            eveniment_id: ID_EVENIMENT,
             nume: formData.nume,
             prenume: formData.prenume,
             status: status === 'ACCEPT' ? 'Confirmat' : 'Refuzat',
